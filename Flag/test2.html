@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>subtraction</p>
+    <p>give a number below</p>
+    <input id="aaaa" />
+    <button onclick='document.getElementById("result").innerHTML = subst()'>
+      submit
+    </button>
+    <p>result will be displayed here</p>
+    <p id="result"></p>
+  
+
+    <script>
+      function subst() {
+        y =parseInt (document.getElementById("aaaa").value);
+        xx = y + 2;
+        return xx;
+        console.log(xx);
+      }
+      
+    </script>
+  </body>
+</html>
