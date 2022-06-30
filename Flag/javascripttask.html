@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Task java script</title>
+        <script>
+            function add(){
+                let x=parseInt(document.getElementById("text1").value)
+                let y=parseInt(document.getElementById("text2").value)
+                let add=(x+y)
+                document.getElementById("20").innerHTML=` the addition of two numbers is :${add}`;
+                
+            }
+            function subtraction(){
+                let x=document.getElementById("text1").value
+                let y=document.getElementById("text2").value
+                let subtraction=(x-y)
+                document.getElementById("21").innerHTML=` the subtraction of two numbers is :${subtraction}`;
+
+            }
+            function Multiply(){
+                let x=document.getElementById("text1").value
+                let y=document.getElementById("text2").value
+                let Multiply=(x*y)
+                document.getElementById("22").innerHTML=` the Multliplication of two numbers is :${Multiply}`;
+            }
+            function Division(){
+                let x=document.getElementById("text1").value
+                let y=document.getElementById("text2").value
+                let Division=(x/y)
+                document.getElementById("23").innerHTML=` the Division of two numbers is :${Division}`;
+            }
+        </script>
+</head>
+<body>
+    <input id="text1" placeholder="Please Enter First Number"></input><br><br>
+    <input id="text2" placeholder="Please Enter Second Number"></input><br><br>
+    <button onclick="add()">add</button>
+    <button onclick="subtraction()">Subtraction</button>
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="Division()">Division</button>
+
+    <p id="20"></p>
+    <p id="21"></p>
+    <p id="22"></p>
+    <p id="23"></p>
+    
+</body>
+</html>
